@@ -53,7 +53,7 @@ export default function Home() {
               ["姓名", "墨熵"],
               ["物种", "灰狼"],
               ["性别", "男"],
-              ["年龄", "18岁"],
+              ["年龄", "17岁"],
               ["生日", "2008.07.07"],
               ["QQ", "2097093469"],
             ].map(([k, v]) => (
@@ -81,12 +81,12 @@ export default function Home() {
         {/* 喜欢 & 不喜欢 */}
         <section className="grid md:grid-cols-2 gap-6">
           <div>
-            <h2 className="text-xl font-bold mb-4 text-green-400">❤️ 喜欢</h2>
+            <h2 className="text-xl font-bold mb-4 text-white">❤️ 喜欢</h2>
             <div className="flex flex-wrap gap-2">
               {likes.map((item) => (
                 <span
                   key={item}
-                  className="px-3 py-1.5 text-xs rounded-full bg-green-950 text-green-300 border border-green-900/50"
+                  className="px-3 py-1.5 text-xs rounded-full bg-white/10 text-zinc-200 border border-white/10"
                 >
                   {item}
                 </span>
@@ -94,12 +94,12 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h2 className="text-xl font-bold mb-4 text-red-400">💔 不喜欢</h2>
+            <h2 className="text-xl font-bold mb-4 text-zinc-400">💔 不喜欢</h2>
             <div className="flex flex-wrap gap-2">
               {dislikes.map((item) => (
                 <span
                   key={item}
-                  className="px-3 py-1.5 text-xs rounded-full bg-red-950 text-red-300 border border-red-900/50"
+                  className="px-3 py-1.5 text-xs rounded-full bg-zinc-800 text-zinc-400 border border-zinc-700/50"
                 >
                   {item}
                 </span>
@@ -156,8 +156,13 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-800/50 py-8 text-center text-zinc-600 text-xs">
-        © 2026 墨熵 · Built with Next.js
+      <footer className="border-t border-zinc-800/50 py-10 text-center space-y-3">
+        <p className="text-zinc-400 text-xs">本网站 100% 由 OpenClaw AI 助手「小小灰」生成</p>
+        <p className="text-zinc-500 text-xs">包括页面设计、代码编写、样式调整、部署上线，全部由 AI 完成</p>
+        <p className="text-zinc-600 text-xs">人类只负责提供想法和内容，剩下交给 AI</p>
+        <div className="pt-3 border-t border-zinc-800/30">
+          <p className="text-zinc-500 text-xs">🐱 小小灰 × 墨熵 · 2026</p>
+        </div>
       </footer>
     </div>
   );
