@@ -28,18 +28,19 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Hero */}
       <header className="relative h-[80vh] flex flex-col items-center justify-center text-center px-6">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(120,120,120,0.08),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(185,28,28,0.07),transparent_60%)]" />
         <div className="relative z-10">
           <p className="text-zinc-500 text-sm tracking-[0.3em] uppercase mb-4">灰狼兽人</p>
           <h1 className="text-7xl md:text-9xl font-bold tracking-tight mb-4">
-            墨<span className="text-zinc-500">熵</span>
+            墨<span className="text-red-900">熵</span>
           </h1>
+          <div className="w-12 h-[2px] bg-red-900/60 mx-auto mb-4 rounded-full" />
           <p className="text-zinc-400 text-lg max-w-md mx-auto leading-relaxed">
             外热内冷，慢热型选手。喜欢干饭、建模、科技。
           </p>
           <p className="text-zinc-600 text-sm mt-4">广西 · 南宁 · 07.07</p>
         </div>
-        <div className="absolute bottom-10 text-zinc-600 text-xs animate-bounce">
+        <div className="absolute bottom-10 text-red-900/70 text-xs animate-bounce">
           ↓ SCROLL
         </div>
       </header>
@@ -81,12 +82,12 @@ export default function Home() {
         {/* 喜欢 & 不喜欢 */}
         <section className="grid md:grid-cols-2 gap-6">
           <div>
-            <h2 className="text-xl font-bold mb-4 text-white">❤️ 喜欢</h2>
+            <h2 className="text-xl font-bold mb-4 text-red-800">❤️ 喜欢</h2>
             <div className="flex flex-wrap gap-2">
               {likes.map((item) => (
                 <span
                   key={item}
-                  className="px-3 py-1.5 text-xs rounded-full bg-white/10 text-zinc-200 border border-white/10"
+                  className="px-3 py-1.5 text-xs rounded-full bg-red-950/80 text-red-200 border border-red-900/40"
                 >
                   {item}
                 </span>
@@ -94,7 +95,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h2 className="text-xl font-bold mb-4 text-zinc-400">💔 不喜欢</h2>
+            <h2 className="text-xl font-bold mb-4 text-zinc-500">💔 不喜欢</h2>
             <div className="flex flex-wrap gap-2">
               {dislikes.map((item) => (
                 <span
@@ -114,7 +115,7 @@ export default function Home() {
           <div className="space-y-3">
             <a
               href="mailto:2097093469@qq.com"
-              className="flex items-center gap-4 p-4 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-600 transition-colors"
+              className="flex items-center gap-4 p-4 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-red-900/60 transition-colors"
             >
               <span className="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center text-sm">📧</span>
               <div>
@@ -124,7 +125,7 @@ export default function Home() {
             </a>
             <a
               href="mailto:yangxutao200877@gmail.com"
-              className="flex items-center gap-4 p-4 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-600 transition-colors"
+              className="flex items-center gap-4 p-4 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-red-900/60 transition-colors"
             >
               <span className="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center text-sm">📧</span>
               <div>
@@ -138,7 +139,7 @@ export default function Home() {
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-600 transition-colors"
+                className="flex items-center gap-4 p-4 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-red-900/60 transition-colors"
                 onMouseEnter={() => setHovered(s.name)}
                 onMouseLeave={() => setHovered(null)}
               >
@@ -156,7 +157,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-zinc-800/50 py-10 text-center space-y-3">
+      <footer className="border-t border-red-950/40 py-10 text-center space-y-3">
         <p className="text-zinc-400 text-xs">本网站 100% 由 OpenClaw AI 助手「小小灰」生成</p>
         <p className="text-zinc-500 text-xs">包括页面设计、代码编写、样式调整、部署上线，全部由 AI 完成</p>
         <p className="text-zinc-600 text-xs">人类只负责提供想法和内容，剩下交给 AI</p>
