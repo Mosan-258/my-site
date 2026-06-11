@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const socials = [
   { name: "Bilibili", url: "https://space.bilibili.com/532703242", icon: "B" },
@@ -26,6 +27,23 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/50">
+        <div className="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
+          <Link href="/" className="text-zinc-200 font-bold text-lg hover:text-red-900 transition-colors">
+            墨<span className="text-red-900">熵</span>
+          </Link>
+          <div className="flex gap-6">
+            <Link href="/" className="text-zinc-400 text-sm hover:text-red-900 transition-colors">
+              首页
+            </Link>
+            <Link href="/projects" className="text-zinc-400 text-sm hover:text-red-900 transition-colors">
+              项目
+            </Link>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero */}
       <header className="relative h-[80vh] flex flex-col items-center justify-center text-center px-6">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(185,28,28,0.07),transparent_60%)]" />
