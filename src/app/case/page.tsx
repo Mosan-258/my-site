@@ -18,7 +18,7 @@ const githubProjects = [
   },
   {
     name: "mimo-skills-loader",
-    desc: "MiMo AI 技能加载器 + 考试周破防 Skill",
+    desc: "期末周已破防，闲着没事做的 → MiMo AI 技能加载器 + 考试周破防 Skill",
     url: "https://github.com/Mosan-258/mimo-skills-loader",
     lang: "Python",
   },
