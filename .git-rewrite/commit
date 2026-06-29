@@ -1,0 +1,6 @@
+tree 29097bf777201990d36c5c1de43d09374a010ae1
+parent 2bc9bee49161126701215fe1eb1ac3a4e883fbe1
+author Mosan-258 <2097093469@qq.com> 1782729605 +0800
+committer Mosan-258 <2097093469@qq.com> 1782729605 +0800
+
+chore: remove deploy.py with exposed token
